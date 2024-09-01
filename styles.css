@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    color: rgb(182, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    /* background-image: url('img/ppp.png');
+    background-size: 10%; */
+}
+
+.header-img_fondo
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    width: 100vw;
+}
+
+nav{
+    width: 100vw;
+    background-color: #f4f4f4;
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+nav div{
+    width: 33.3vw;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav div a {
+    color: #000000;
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-carta{
+    border-radius: 4%;
+    height: 300px;
+    width: 300px;
+    margin: 2%;
+    overflow: hidden;
+}
+
+.contenedor-carta:hover{
+    box-shadow: 1px  5px 10px whitesmoke;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.poster-carta{
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.descripcion-carta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 14, 33);
+    color: #ffffff;
+    height: 20%;
+    width: 100%;
+    padding: 5%;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+    color: #000000;
+    text-align: center;
+    border-top: 2px solid #444;
+    margin: 0;
+    padding: 10px;
+}
