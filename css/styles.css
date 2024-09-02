@@ -8,15 +8,12 @@ body {
 }
 
 header {
-    color: rgb(182, 0, 0);
     display: flex;
     width: 100vw;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
     background-color: #ffffff;
-    /* background-image: url('img/ppp.png');
-    background-size: 10%; */
 }
 
 .header-img_fondo
@@ -26,12 +23,18 @@ header {
     object-fit: cover;
 }
 
+.encabezado a{
+    color: rgb(182, 0, 0);
+    text-decoration: none;
+}
+
 .encabezado{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 
 .logo {
     width: 100px;
@@ -71,6 +74,13 @@ nav div a {
     text-decoration: none;
 }
 
+nav div a:hover {
+    color: red;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +117,8 @@ main{
     align-items: center;
     background-color: rgb(13, 30, 68);
     color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .texto-corto p {
@@ -132,13 +144,67 @@ main{
     margin-bottom: 5px;
 }
 
+.texto_index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 70vh;
+    width: 100vw;
+}
+
 
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #c0c0c0;
     color: #000000;
     text-align: center;
     border-top: 2px solid #444;
     margin: 0;
     padding: 10px;
+}
+
+
+.footer-div
+{
+    width: 80vw;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#github{
+    fill: rgb(0, 0, 0);
+    transform: scale(2);
+    min-width: 24px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#github:hover{
+    fill: red;
+    transform: scale(3);
+    transition: 0.3s;
+}
+
+.footer-enlace
+{
+    padding-left: 1%;
+    width: auto;
+    min-width: 200px;
+    margin-top: 2vh;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-enlace:hover{
+    color: red;
+    transform: scale(1.05);
+    transition: 0.3s;
 }
