@@ -10,6 +10,7 @@ body {
 header {
     color: rgb(182, 0, 0);
     display: flex;
+    width: 100vw;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
@@ -25,14 +26,23 @@ header {
     object-fit: cover;
 }
 
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo {
-    flex: 1;
+    width: 100px;
+    height: 100px;
     text-align: center;
 }
 
 .titulo {
     text-align: center;
     width: 100vw;
+    margin: 0;
 }
 
 nav{
@@ -69,10 +79,11 @@ main{
 
 .contenedor-carta{
     border-radius: 4%;
-    height: 300px;
+    height: auto;
     width: 300px;
     margin: 2%;
     overflow: hidden;
+    background-color: rgb(13, 30, 68);
 }
 
 .contenedor-carta:hover{
@@ -82,22 +93,45 @@ main{
 }
 
 .poster-carta{
-    height: 100%;
-    width: 100%;
+    height: 300px;
+    width: 300px;
     object-fit: cover
 }
 
 .descripcion-carta{
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(6, 14, 33);
+    background-color: rgb(13, 30, 68);
     color: #ffffff;
-    height: 20%;
-    width: 100%;
-    padding: 5%;
 }
+
+.texto-corto p {
+    padding-left: 5%;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.boton {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+}
+
 
 
 footer {
