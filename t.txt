@@ -1,0 +1,3 @@
+sacarle padding al navbar
+centrar el footer con flex
+agregar costo a los productos
