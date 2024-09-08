@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/validaciones.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <a href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="imagen-sala-cine">
+            </a>
+            <a href="./index.html">
+                <h1 class="titulo">hierrosart</h1>
+            </a>
+        </div>
+        <nav>
+            <div><a href="./index.html">Inicio</a></div>
+            <div><a href="./productos.html">Productos</a></div>
+            <div><a href="./servicios.html">Servicios</a></div>
+            <div><a href="./arte.html">Arte</a></div>
+            <div><a href="./encuesta.html">Encuesta</a></div>
+        </nav>
+    </header>
+    <main>
+        <form id="encuesta-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="text" id="fecha" name="fecha" placeholder="dd-mm-aaaa" required>
+            
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Seleccionar</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+            
+            <label for="valoracion">Valoración de la página:</label>
+            <select id="valoracion" name="valoracion" required>
+                <option value="">Seleccionar</option>
+                <option value="lamentable">Lamentable</option>
+                <option value="mala">Mala</option>
+                <option value="mejorar">Podría ser mejor</option>
+                <option value="cumple">Cumple con mis expectativas</option>
+                <option value="encanto">Me encantó</option>
+            </select>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+            <button type="button" onclick="location.href='./index.html'">Cancelar</button>
+            <button type="reset">Restablecer valores</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <!-- Tu contenido de footer aquí -->
+    </footer>
+</body>
+</html>

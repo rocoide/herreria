@@ -208,3 +208,68 @@ footer {
     transform: scale(1.05);
     transition: 0.3s;
 }
+
+/* Estilo general del formulario */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo del formulario */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las etiquetas y campos del formulario */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Color del texto de las etiquetas */
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* Fondo de los campos */
+    color: #333; /* Color del texto en los campos */
+}
+
+/* Estilo para el botón de enviar y otros botones */
+form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el botón de restablecer */
+form button[type="reset"] {
+    background-color: #e74c3c;
+}
+
+form button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo para el botón de cancelar */
+form button[type="button"] {
+    background-color: #95a5a6;
+}
+
+form button[type="button"]:hover {
+    background-color: #7f8c8d;
+}
