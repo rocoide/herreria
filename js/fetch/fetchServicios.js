@@ -1,4 +1,4 @@
-export async function getItems(){
+export async function getServicios(){
     const token = 'd2qxfozf06b47gdm8p06iikz4kebikwlv4xv403v'; // Replace with your actual token
 
     const config = {
@@ -12,7 +12,7 @@ export async function getItems(){
     {
         const response = await fetch
         (
-            `https://api.json-generator.com/templates/W3pkkNTYGerO/data`, config
+            `https://api.json-generator.com/templates/3VBmuOoCsInO/data`, config
         );
         return response;
     }

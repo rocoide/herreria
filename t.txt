@@ -7,16 +7,6 @@ los cuadraditos del form exceden el modal
 corregir el porque se ve todo el texto pero no solo 2 lineas en las cartas
 
 
-{
-  "id": 1,
-  "nombre": "Leñero",
-  "descripcion": "Leñero de 80 cm de alto por 30 de largo",
-  "imagen": "./img/productos/leñero.jpg",
-  "precio": 100,
-  "categoria": "Accesorios para hogar"
-}
-
-
 
 JG.repeat(10, {
   id: JG.objectId(),
