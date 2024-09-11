@@ -5,3 +5,45 @@ agregar costo a los productos
 no contempla los espacios en el nombre " " del formulario
 los cuadraditos del form exceden el modal
 corregir el porque se ve todo el texto pero no solo 2 lineas en las cartas
+
+
+{
+  "id": 1,
+  "nombre": "Leñero",
+  "descripcion": "Leñero de 80 cm de alto por 30 de largo",
+  "imagen": "./img/productos/leñero.jpg",
+  "precio": 100,
+  "categoria": "Accesorios para hogar"
+}
+
+
+
+[
+  '{{repeat(5, 10)}}',
+  {
+    id: '{{index(1)}}',
+    nombre: '{{random("Leñero", "Mueble", "Parrilla", "Escultura", "Mesa")}}',
+    descripcion: function() {
+      var descripciones = {
+        "Leñero": "Leñero de 80 cm de alto por 30 de largo",
+        "Mueble": "Mueble para local de comida",
+        "Parrilla": "Asador criollo, regulable + parrilla para achuras",
+        "Escultura": "Escultura artística de hierro forjado",
+        "Mesa": "Mesa de comedor, estructura de hierro"
+      };
+      return descripciones[this.nombre];
+    },
+    imagen: function() {
+      var imagenes = {
+        "Leñero": "./img/productos/leñero.jpg",
+        "Mueble": "./img/productos/mueble.jpg",
+        "Parrilla": "./img/productos/parrilla.jpg",
+        "Escultura": "./img/arte/escultura.jpg",
+        "Mesa": "./img/productos/mesa.jpg"
+      };
+      return imagenes[this.nombre];
+    },
+    precio: '{{integer(50, 500)}}',
+    categoria: '{{random("arte", "productos", "servicios")}}'
+  }
+]

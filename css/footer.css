@@ -1,0 +1,49 @@
+footer {
+    background-color: #c0c0c0;
+    color: #000000;
+    text-align: center;
+    border-top: 2px solid #444;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.footer-div
+{
+    width: 80vw;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#github{
+    fill: rgb(0, 0, 0);
+    transform: scale(2);
+    min-width: 24px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#github:hover{
+    fill: red;
+    transform: scale(3);
+    transition: 0.3s;
+}
+
+.footer-enlace
+{
+    padding-left: 1%;
+    width: auto;
+    min-width: 200px;
+    margin-top: 2vh;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-enlace:hover{
+    color: red;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
