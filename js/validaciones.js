@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const fecha = document.getElementById('fecha').value;
         const email = document.getElementById('email').value;
 
-        const nombreRegex = /^[a-zA-Z]+$/;
+        const nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
         const fechaRegex = /^\d{2}-\d{2}-\d{4}$/;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
