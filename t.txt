@@ -5,6 +5,7 @@ agregar costo a los productos
 no contempla los espacios en el nombre " " del formulario
 los cuadraditos del form exceden el modal
 corregir el porque se ve todo el texto pero no solo 2 lineas en las cartas
+cuando la carta cambia el color de fondo se ve feo
 
 
 

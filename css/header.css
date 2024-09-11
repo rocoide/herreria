@@ -46,7 +46,6 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 nav div{
@@ -69,4 +68,21 @@ nav div a:hover {
     color: red;
     transform: scale(1.05);
     transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 767px) {
+    nav{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 5px;
+    }
 }
