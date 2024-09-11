@@ -1,9 +1,9 @@
-export async function carta()
+export async function carta(elemento)
 {
     return  `
             <div class="contenedor-carta">
                 <div class="poster-carta">   
-                    <img class="header-img_fondo" src="./img/productos/leñero.jpg" alt="imagen-sala-cine">
+                    <img class="header-img_fondo" src="${elemento.imagen}" alt="imagen producto">
                 </div>
                 <div class="descripcion-carta">
                     <h2>Leñero</h2>
