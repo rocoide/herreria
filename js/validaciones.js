@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             valid = false;
         }
 
-        // Mostrar alerta con datos si es válido
+        // Mostrar alerta con datos si está ok
         if (valid) {
             alert(`Nombre: ${nombre}\nApellido: ${apellido}\nFecha de Nacimiento: ${fecha}\nSexo: ${document.getElementById('sexo').value}\nValoración: ${document.getElementById('valoracion').value}\nEmail: ${email}\nComentario: ${document.getElementById('comentario').value}`);
         } else {
@@ -45,17 +45,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Evento para el botón "Cancelar"
+    // Evento para el botón Cancelar
     botonCancelar.addEventListener('click', function (event) {
         event.preventDefault();
         const confirmacion = confirm("¿Deseas volver a la página anterior?");
         if (confirmacion) {
-            window.history.back(); // Volver a la página anterior
+            window.history.back();
         }
     });
 
-    // Evento para el botón "Restablecer valores"
+    // Evento para el botón Restablecer
     botonRestablecer.addEventListener('click', function () {
-        form.reset(); // Restablece los valores del formulario
+        form.reset();
     });
 });
